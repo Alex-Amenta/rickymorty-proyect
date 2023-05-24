@@ -1,0 +1,63 @@
+.container {
+  margin-top: 80px;
+}
+
+
+.container h1 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 6px 42px rgb(255, 253, 253);
+  font-size: 70px;
+  font-weight: bold;
+}
+
+
+.container button {
+  /* justify-content: right; */
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+    font-weight: bold;
+  }
+  
+  .container .active {
+    color: red;
+  }
+  
+  .container .button {
+    cursor: pointer;
+    height: 45px;
+    width: 100px;
+    border-radius: 1rem;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: #e8e8e8;
+    transition: 0.5s;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+  }
+  
+  
+  .container .button:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .container .logout {
+    height: 45px;
+  width: 100px;
+  border-radius: 1rem;
+  border: 2px solid #000000;
+  cursor: pointer;
+  background-color: #e8e8e8;
+  transition: 0.5s;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+
+.container .logout:hover {
+  background-color: red;
+    color: white;
+}

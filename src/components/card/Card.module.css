@@ -1,21 +1,18 @@
 /* cards con characters "container" */
 .container {
-  /* box-sizing: border-box; */
   text-align: center;
-  width: 200px;
-  height: 420px;
+  width: 270px;
+  height: 530px;
   margin: 20px;
   margin-top: 50px;
+  margin-bottom: 100px;
   padding: 10px;
-  background: rgba(217, 217, 217, 0.58);
+  background: rgba(141, 136, 136, 0.395);
   border: 1px solid white;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 15px;
-  /* text-align: center; */
-  cursor: pointer;
   transition: all 0.5s;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   user-select: none;
@@ -24,6 +21,7 @@
 }
 
 .container:hover {
+  background: rgba(0, 0, 0, 0.42);
   border: 1px solid black;
   transform: scale(1.05);
 }
@@ -33,26 +31,68 @@
 }
 
 .container img {
-  width: 180px;
+  width: 220px;
   border-radius: 10px;
 }
 
 .container h2 {
-  color: #086385;
+  color: #f4f4f4;
   text-shadow: 0px 0px 1px black;
+  font-weight: bold;
+  font-size: 25px;
 }
+
+.container h2:hover {
+  color: aqua;
+  text-shadow: 0px 6px 42px aqua;
+}
+
+.container h4 {
+  color: #f4f4f4;
+  font-size: 20px;
+}
+
+.favContainer {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.corazon {
+  /* margin-top: -1px; */
+  margin-left: 10px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.corazon:hover {
+  filter: drop-shadow(2px 2px 8px black);
+  transform: scale(1.2) ;
+-webkit-transform: scale(1.2) ;
+-moz-transform: scale(1.2) ;
+}
+
 
 .buttonContainer {
   display: flex;
-  justify-content: end;
+  justify-content: right;
+  width: 100px;
+  margin-left: 10rem;
 }
 
+
 /* button "X" */
-.buttonContainer button {
+.buttonContainer .borrar {
+  cursor: pointer;
   padding: 10px 20px;
   border-radius: 50px;
   border: 0;
-  background-color: rgba(217, 217, 217, 0.58);
+  background-color: rgba(147, 145, 145, 0.58);
   box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -60,14 +100,14 @@
   transition: all 0.5s ease;
 }
 
-.buttonContainer button:hover {
+.buttonContainer .borrar:hover {
   letter-spacing: 3px;
   background-color: hsl(0, 80%, 48%);
   color: hsl(0, 14%, 90%);
   box-shadow: rgb(220, 24, 24) 0px 7px 29px 0px;
 }
 
-.buttonContainer button:active {
+.buttonContainer .borrar:active {
   letter-spacing: 3px;
   background-color: hsl(0, 80%, 48%);
   color: hsl(0, 0%, 100%);

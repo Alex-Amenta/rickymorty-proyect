@@ -1,0 +1,98 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+ 
+.container_hijo {
+    width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #e8e8e8;
+  box-shadow: 2px 2px 10px #ccc;
+}
+
+
+.input_container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+form img {
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    border-radius: 90px;
+    filter: drop-shadow(9px 9px 9px black);
+}
+
+form p {
+    color: rgb(220, 7, 7);
+    padding-top: 0;
+    font-size: 20px;
+    /* margin-bottom: 40px; */
+    font-style: italic;
+    text-align: left;
+}
+
+form label {
+    font-size: 18px;
+  padding-bottom: 30px;
+  margin-left: 5px;
+}
+
+form input {
+    background-color: #212121;
+    width: 60%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  color: white;
+}
+
+form input:focus {
+    color: rgb(255, 255, 255);
+    background-color: #212121;
+    outline-color: rgb(0, 255, 255);
+    box-shadow: -3px -3px 15px rgb(0, 255, 255);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+
+
+form button {
+    height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+ 
+form button:hover {
+    background-color: rgb(0, 0, 0);
+      color: white;
+}
+
+form hr {
+  visibility: visible;
+    margin-bottom: 10px;
+    /* margin-top: 300px; */
+    width: 100%;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(253, 253, 253, 0), rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
+}
+  
