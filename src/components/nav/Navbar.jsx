@@ -5,9 +5,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    <div>
-      <div className={styles.container}>
-        <h1>Rick and Morty</h1>
+    <div className={styles.container}>
+      <div className={styles.navBar}>
         <NavLink to="/home">
           <button className={styles.button}>Home</button>
         </NavLink>
@@ -20,6 +19,10 @@ export default function Navbar(props) {
         <NavLink to="/">
           <button className={styles.logout} onClick={() => setAcess(false)}>Log Out</button>
         </NavLink>
+        {/* <hr /> */}
+        <div className={styles.titulo}>
+        <h1>Rick and Morty</h1>
+        </div>
       </div>
       <SearchBar onSearch={props.onSearch} />
     </div>

@@ -28,17 +28,23 @@ function Card(props) {
   return (
     <div className={styles.container}>
       <div className={styles.favContainer}>
-
         {isFav ? (
           <button className={styles.corazon} onClick={handleFavorite}>
             ❤️
           </button>
         ) : (
-          <button className={styles.corazon} onClick={handleFavorite}>🤍</button>
+          <button className={styles.corazon} onClick={handleFavorite}>
+            🤍
+          </button>
         )}
       </div>
       <div className={styles.buttonContainer}>
-        <button className={styles.borrar} onClick={() => props.onClose(props.id)}>X</button>
+        <button
+          className={styles.borrar}
+          onClick={() => props.onClose(props.id)}
+        >
+          X
+        </button>
       </div>
       <div className={styles.dataContainer}>
         <h4 style={{ color: "green" }}>
